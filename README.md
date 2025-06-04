@@ -1,6 +1,6 @@
-# Secret Santa Sorter 🎁
+# Amigo Invisible 🎁
 
-¡Organiza tus intercambios de Amigo Invisible (o Secret Santa) de forma fácil, rápida y divertida! Esta aplicación web te permite gestionar participantes, definir reglas de exclusión y enviar las asignaciones por correo electrónico de manera automática.
+¡Organiza tus intercambios de Amigo Invisible de forma fácil, rápida y divertida! Esta aplicación web te permite gestionar participantes, definir reglas de exclusión y enviar las asignaciones por correo electrónico de manera automática.
 
 ## Características Principales
 
@@ -8,7 +8,7 @@
 *   Definición de título y descripción para el evento.
 *   Algoritmo de asignación aleatoria inteligente que asegura que nadie se auto-regale.
 *   Posibilidad de añadir reglas de exclusión (participantes que no deben regalarse entre sí).
-*   Envío (o simulación) de correos electrónicos a cada participante con su asignación y los detalles del evento.
+*   Envío de correos electrónicos a cada participante con su asignación y los detalles del evento.
 *   Interfaz de usuario moderna y festiva construida con ShadCN UI y Tailwind CSS.
 
 ## Tecnologías Utilizadas
@@ -34,13 +34,12 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente:
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+    git clone https://github.com/damianclancig/AmigoInvisible.git
     ```
-    (Reemplaza `https://github.com/TU_USUARIO/TU_REPOSITORIO.git` con la URL de tu repositorio)
 
 2.  **Navega al directorio del proyecto:**
     ```bash
-    cd secret-santa-sorter 
+    cd AmigoInvisible 
     # O el nombre del directorio donde clonaste el proyecto
     ```
 
