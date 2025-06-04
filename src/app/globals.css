@@ -2,79 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
+    --background: 355 60% 92%; /* #F7E0E2 Light Desaturated Red */
+    --foreground: 355 40% 20%; /* #522E2F Dark Brownish Red */
+    --card: 355 70% 96%; /* #FBF2F3 Very Light Pinkish */
+    --card-foreground: 355 40% 20%;
+    --popover: 355 70% 96%;
+    --popover-foreground: 355 40% 20%;
+    --primary: 355 79% 56%; /* #E63946 Festive Red */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 27 80% 80%; /* #F9C098 Light Orange (used as a softer accent) */
+    --secondary-foreground: 27 50% 25%; /* #604028 Dark Brownish Orange */
+    --muted: 355 50% 90%; /* #F3DADD Muted Pink */
+    --muted-foreground: 355 30% 50%; /* #996A6D Muted Text */
+    --accent: 27 87% 67%; /* #F4A261 Analogous Orange */
+    --accent-foreground: 0 0% 10%; /* Almost Black for contrast */
+    --destructive: 0 72% 51%; /* #E53E3E Standard Destructive */
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 355 40% 85%; /* #EDC8CA Lighter border */
+    --input: 355 50% 94%; /* #F8E5E7 Lighter input background */
+    --ring: 355 79% 50%; /* #DA2C38 Darker Primary for Ring */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 355 65% 94%; /* Lighter pink for sidebar */
+    --sidebar-foreground: 355 35% 22%; /* Darker text for sidebar */
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: 355 40% 88%; /* Slightly more prominent border for sidebar elements */
+    --sidebar-ring: var(--ring);
   }
+
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 355 15% 10%; /* #211717 Very Dark Desaturated Red */
+    --foreground: 355 30% 85%; /* #E8C2C3 Light Pinkish Text */
+    --card: 355 15% 15%; /* #2E2021 Darker Card */
+    --card-foreground: 355 30% 85%;
+    --popover: 355 15% 15%;
+    --popover-foreground: 355 30% 85%;
+    --primary: 355 70% 60%; /* #EA5964 Brighter Festive Red for Dark Mode */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 27 70% 70%; /* #F6B182 Brighter Light Orange */
+    --secondary-foreground: 27 40% 15%; /* #3C2E23 Darker for contrast */
+    --muted: 355 15% 20%; /* #3D2A2B Dark Muted Pink */
+    --muted-foreground: 355 25% 65%; /* #BF9A9C Softer Muted Text */
+    --accent: 27 80% 70%; /* #F7B37A Brighter Analogous Orange */
+    --accent-foreground: 0 0% 10%; /* Almost Black for contrast */
+    --destructive: 0 60% 50%; /* #E53E3E Slightly less intense for dark */
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 355 15% 25%; /* #4A3335 Dark Border */
+    --input: 355 15% 22%; /* #422F30 Dark Input Background */
+    --ring: 355 70% 55%; /* #E84A55 Brighter Ring */
+    --chart-1: 12 70% 55%;
+    --chart-2: 173 50% 35%;
+    --chart-3: 197 30% 20%;
+    --chart-4: 43 70% 60%;
+    --chart-5: 27 80% 60%;
+    --sidebar-background: 355 18% 12%; /* Darker sidebar */
+    --sidebar-foreground: 355 25% 80%; /* Lighter text for dark sidebar */
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: 355 15% 20%; 
+    --sidebar-ring: var(--ring);
   }
 }
 
