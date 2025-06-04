@@ -1,9 +1,10 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Secret Santa Sorter',
+  title: 'Amigo Invisible',
   description: '¡Organiza fácilmente tu intercambio de Amigo Invisible!',
 };
 

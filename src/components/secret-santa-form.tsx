@@ -176,7 +176,7 @@ export default function SecretSantaForm() {
       <header className="text-center mb-10">
         <Gift className="mx-auto h-16 w-16 text-primary mb-4" />
         <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-          Secret Santa Sorter
+          Amigo Invisible
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
           ¡Organiza tu intercambio de Amigo Invisible con facilidad y reglas personalizadas!
@@ -432,10 +432,7 @@ export default function SecretSantaForm() {
 
       <footer className="text-center mt-12 py-6 border-t border-border">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Secret Santa Sorter. ¡Felices Regalos!
-        </p>
-        <p className="text-xs text-muted-foreground mt-1">
-          Recuerda configurar tus variables de entorno EMAIL_USER y EMAIL_PASS para el envío real de correos.
+          &copy; {new Date().getFullYear()} Amigo Invisible. ¡Felices Regalos!
         </p>
       </footer>
     </div>
