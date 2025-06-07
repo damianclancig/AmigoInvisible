@@ -1,8 +1,11 @@
 
+export type ContactType = 'email' | 'sms'; // 'sms' se usará como base para números de teléfono (WhatsApp/SMS)
+
 export interface Participant {
   id: string;
   name: string;
-  email: string;
+  contact: string; // Puede ser email o número de teléfono
+  contactType: ContactType;
 }
 
 export interface Assignment {
@@ -15,19 +18,20 @@ export interface ExclusionRule {
   participant1Id: string;
   participant2Id: string;
   // Para mostrar en la UI de forma amigable
-  participant1Name?: string; 
+  participant1Name?: string;
   participant2Name?: string;
 }
 
 export interface AssignmentLogEntry {
   giverName: string;
-  giverEmail: string;
+  giverContact: string; // Email o teléfono del que da el regalo
   receiverName: string;
-  emailSubject: string;
-  emailBodyHtml: string; // Cuerpo del correo en HTML
-  emailBodyText: string; // Cuerpo del correo en texto plano
-  sendStatus: 'enviado' | 'fallido' | 'no_configurado'; // no_configurado si EMAIL_USER o EMAIL_PASS faltan
+  messageSubjectOrType: string; // Asunto del correo o tipo de mensaje (ej. "Mensaje de WhatsApp: Amigo Invisible")
+  messageBodyHtml: string; // Cuerpo del correo en HTML o mensaje de texto (puede ser el mismo para SMS/WhatsApp)
+  messageBodyText: string; // Cuerpo del correo en texto plano o mensaje de texto
+  sendStatus: 'enviado' | 'fallido' | 'no_configurado' | 'simulado_sms' | 'simulado_whatsapp';
   sendError?: string; // Mensaje de error si falló
+  contactType: ContactType; // 'email' o 'sms' (para WhatsApp se usará 'sms' con el número)
 }
 
 export interface ServerActionResponse {
@@ -35,4 +39,3 @@ export interface ServerActionResponse {
   message: string;
   assignmentsLog?: AssignmentLogEntry[];
 }
-
