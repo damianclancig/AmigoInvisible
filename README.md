@@ -38,14 +38,12 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente:
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git 
-    # Reemplaza con la URL de tu repositorio
+    git clone https://github.com/damianclancig/AmigoInvisible.git
     ```
 
 2.  **Navega al directorio del proyecto:**
     ```bash
-    cd TU_REPOSITORIO 
-    # O el nombre del directorio donde clonaste el proyecto
+    cd AmigoInvisible
     ```
 
 3.  **Instala las dependencias:**
